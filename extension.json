@@ -2,8 +2,11 @@
     "identifier": "net.marquiskurt.LuaLS",
     "name": "LuaLS",
     "organization": "Marquis Kurt",
-    "description": "Lorem ipsum, dolor sit amet.",
+    "description": "Type definitions, annotations, and more for Lua code.",
     "version": "1.0",
+    "homepage": "https://luals.github.io",
+    "repository": "https://github.com/alicerunsonfedora/luals-nova",
+    "bugs": "https://github.com/alicerunsonfedora/luals-nova/issues",
     "categories": ["languages"],
     
     "main": "main.js",
