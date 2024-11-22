@@ -1,6 +1,9 @@
 **LuaLS** provides deep integration with **Lua** through the [Lua Language Server](https://luals.github.io/) project.
 
-![Nova screenshot with LuaLS enabled](screenshot.png)
+> **⚠️ Disclaimer**  
+> This extension is not officially maintained or endorsed by the LuaLS project. Should you run into any issues with this extension, please file bug reports and feature requests on this project's page.
+
+![Nova screenshot with LuaLS enabled](https://github.com/alicerunsonfedora/luals-nova/raw/main/screenshot.png)
 
 ## Requirements
 
