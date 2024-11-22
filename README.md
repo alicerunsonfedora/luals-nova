@@ -8,10 +8,6 @@ LuaLS requires some additional tools to be installed on your Mac:
 
 - [Lua Language Server](https://luals.github.io)
 
-<!--
-✨ Providing tips, tricks, or other guides for installing or configuring external dependencies can go a long way toward helping your users have a good setup experience:
--->
-
 > To install the current stable version of Lua Language Server with Homebrew, run `brew install lua-language-server`.
 
 ## Usage
@@ -23,6 +19,6 @@ LuaLS runs any time you open a local project, automatically lints all open files
 
 To configure global preferences, open **Extensions → Extension Library...** then select LuaLS's **Preferences** tab.
 
-Likewise, you can write a custom `.luarc.json` file in your local project to control the behaviors of LuaLS.
+Likewise, you can write a custom `.luarc.json` file in your local project to control the behaviors of LuaLS. Or, if you have a custom configuration file, you can open your Workspace settings to configure LuaLS with it.
 
 [Configure LuaLS &rsaquo;](https://luals.github.io/wiki/configuration/)
