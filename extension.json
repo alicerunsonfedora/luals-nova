@@ -18,10 +18,18 @@
     
     "config": [
         {
-            "key": "example.language-server-path",
+            "key": "luals.language-server-path",
             "title": "Language Server Path",
             "type": "path",
-            "placeholder": "/usr/local/bin/example"
+            "placeholder": "/opt/homebrew/bin/lua-language-server"
         }
-    ]
+    ],
+    "configWorkspace": [
+        {
+            "key": "luals.workspace.config-file",
+            "title": "Configuration File",
+            "type": "path",
+            "placeholder": ".luarc.json"
+        }
+    ],
 }

@@ -17,33 +17,48 @@ class LuaLanguageServer {
   constructor() {
     // Observe the configuration setting for the server's location, and restart the server on change
     nova.config.observe(
-      "example.language-server-path",
+      "luals.language-server-path",
       function (path) {
-        this.start(path);
+        this.lsPath = path;
+        this.start();
       },
       this
     );
+    
+    nova.config.observe(
+      "luals.workspace.config-file",
+      function (configPath) {
+        this.configPath = configPath;
+        this.start();
+      },
+      this
+    )
   }
 
   deactivate() {
     this.stop();
   }
 
-  start(path) {
+  start() {
     if (this.languageClient) {
       this.languageClient.stop();
       nova.subscriptions.remove(this.languageClient);
     }
 
     // Use the default server path
-    if (!path) {
-      path = "/opt/homebrew/bin/lua-language-server";
+    if (!this.lsPath) {
+      this.lsPath = "/opt/homebrew/bin/lua-language-server";
     }
 
     // Create the client
     var serverOptions = {
-      path: path,
+      path: this.lsPath,
     };
+    
+    if (this.configPath) {
+      serverOptions[args] = ["--configfile", this.configPath];
+    }
+    
     var clientOptions = {
       // The set of document syntaxes for which the server is valid
       syntaxes: ["lua"],
