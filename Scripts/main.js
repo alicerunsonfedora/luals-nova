@@ -25,7 +25,7 @@ class LuaLanguageServer {
       this
     );
     
-    nova.config.observe(
+    nova.workspace.config.observe(
       "luals.workspace.config-file",
       function (configPath) {
         this.configPath = configPath;
@@ -56,7 +56,7 @@ class LuaLanguageServer {
     };
     
     if (this.configPath) {
-      serverOptions[args] = ["--configfile", this.configPath];
+      serverOptions.args = [`--configpath ${this.configPath}`];
     }
     
     var clientOptions = {
