@@ -56,7 +56,7 @@ class LuaLanguageServer {
     };
     
     if (this.configPath) {
-      serverOptions.args = [`--configpath ${this.configPath}`];
+      serverOptions.args = [`--configpath=${this.configPath}`];
     }
     
     var clientOptions = {

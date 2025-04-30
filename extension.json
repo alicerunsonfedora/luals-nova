@@ -3,7 +3,7 @@
     "name": "LuaLS",
     "organization": "Marquis Kurt",
     "description": "Type definitions, annotations, and more for Lua code.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT License",
     "homepage": "https://luals.github.io",
     "repository": "https://github.com/alicerunsonfedora/luals-nova",
