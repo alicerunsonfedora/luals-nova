@@ -16,7 +16,11 @@
         "process": true,
         "filesystem": "readonly"
     },
-    
+
+    "activationEvents": [
+        "onLanguage:lua",
+    ],
+
     "config": [
         {
             "key": "luals.language-server-path",
