@@ -1,6 +1,7 @@
 ## Version 1.0.3
 
-- add activationEvent, Extension now only activates when working with Lua files
+- Added `activationEvent`: The extension now only activates when working with Lua files.
+  Contributed by @stonerl.
 
 ## Version 1.0.2
 
