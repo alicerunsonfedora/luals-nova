@@ -1,36 +1,38 @@
 {
-    "identifier": "net.marquiskurt.luals-nova",
-    "name": "LuaLS",
-    "organization": "Marquis Kurt",
-    "description": "Type definitions, annotations, and more for Lua code.",
-    "version": "1.0.1",
-    "license": "MIT License",
-    "homepage": "https://luals.github.io",
-    "repository": "https://github.com/alicerunsonfedora/luals-nova",
-    "bugs": "https://github.com/alicerunsonfedora/luals-nova/issues",
-    "categories": ["languages"],
-    
-    "main": "main.js",
-    
-    "entitlements": {
-        "process": true,
-        "filesystem": "readonly"
-    },
-    
-    "config": [
-        {
-            "key": "luals.language-server-path",
-            "title": "Language Server Path",
-            "type": "path",
-            "placeholder": "/opt/homebrew/bin/lua-language-server"
-        }
-    ],
-    "configWorkspace": [
-        {
-            "key": "luals.workspace.config-file",
-            "title": "Configuration File",
-            "type": "path",
-            "placeholder": ".luarc.json"
-        }
-    ]
+  "identifier": "net.marquiskurt.luals-nova",
+  "name": "LuaLS",
+  "organization": "Marquis Kurt",
+  "description": "Type definitions, annotations, and more for Lua code.",
+  "version": "1.0.3",
+  "license": "MIT License",
+  "homepage": "https://luals.github.io",
+  "repository": "https://github.com/alicerunsonfedora/luals-nova",
+  "bugs": "https://github.com/alicerunsonfedora/luals-nova/issues",
+  "categories": ["languages"],
+
+  "main": "main.js",
+
+  "entitlements": {
+    "process": true,
+    "filesystem": "readonly"
+  },
+
+  "activationEvents": ["onLanguage:lua"],
+
+  "config": [
+    {
+      "key": "luals.language-server-path",
+      "title": "Language Server Path",
+      "type": "path",
+      "placeholder": "/opt/homebrew/bin/lua-language-server"
+    }
+  ],
+  "configWorkspace": [
+    {
+      "key": "luals.workspace.config-file",
+      "title": "Configuration File",
+      "type": "path",
+      "placeholder": ".luarc.json"
+    }
+  ]
 }
