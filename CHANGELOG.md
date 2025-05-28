@@ -5,8 +5,9 @@
 
 ### Version 1.0.2
 
-- Changes how the config file is set inside of settings to mitigate
-  crashes from custom configuration paths.
+- Changes how the config file is set inside of settings to mitigate crashes from
+custom configuration paths (fixes #2). Thanks to @peterhagelund for the detective
+work that led to the fix!
 
 ### Version 1.0.1
 
