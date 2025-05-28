@@ -22,17 +22,17 @@ class LuaLanguageServer {
         this.lsPath = path;
         this.start();
       },
-      this
+      this,
     );
-    
+
     nova.workspace.config.observe(
       "luals.workspace.config-file",
       function (configPath) {
         this.configPath = configPath;
         this.start();
       },
-      this
-    )
+      this,
+    );
   }
 
   deactivate() {
@@ -54,11 +54,11 @@ class LuaLanguageServer {
     var serverOptions = {
       path: this.lsPath,
     };
-    
+
     if (this.configPath) {
       serverOptions.args = [`--configpath ${this.configPath}`];
     }
-    
+
     var clientOptions = {
       // The set of document syntaxes for which the server is valid
       syntaxes: ["lua"],
@@ -67,7 +67,7 @@ class LuaLanguageServer {
       "lua",
       "Lua Language Server",
       serverOptions,
-      clientOptions
+      clientOptions,
     );
 
     try {
